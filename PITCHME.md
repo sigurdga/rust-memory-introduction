@@ -9,14 +9,24 @@ _paginate: false
 
 # Rust og minnetrygghet
 
+Jeg har brukt begrenset erfaring
+
+  * Rust + protobuf + influxdb + websocket + react
+  * Rust + API + Mongdb + CLI 
+  * Advent of code, for å komme i gang
+
 ---
 
-## Safety and performance
+## Automatisk minnehåndtering
 
-* Automatisk minnehåndtering
-* Ingen GC
+* Uten garbage collector
 * Ved hjelp av: Ownership, borrowing, references, lifetimes
   * I C-språk gjør du dette selv
+
+---
+
+## Automatisk minnehåndtering (2)
+
 * Løser nye klasser med seriøse problemer
 * Tryggere å refaktorere kode
 * Tar code-review til et høyre nivå
@@ -50,21 +60,23 @@ TODO Eksempel
 
 ## Cross platform
 
-* Cross platform CLI
+* Cross platform CLI-verktøy er enkelt å skrive
 
 ---
 
-## Historie
+## Hva med performance?
 
-* 1.0 kom for fire år siden
-* Men språket er ca åtte-ni år nå
-* Kommer ny versjon hver sjette uke
-* Vi er på versjon 1.39 nå
-  * Med `async!`/`.await` stabilisert
+![Techempower benchmarks](assets/techempower-benchmarks.png)
+
+[Techempower benchmarks](https://www.techempower.com/benchmarks/)
+
+[Debian benchmarks game](https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/rust-gpp.html)
 
 ---
 
-## «Most loved» (Stack overflow)
+## Hva med læringskurve?
+
+Læringskurva kan gjøre det vanskelig å komme i gang, men siden den er bratt kommer man fort ganske langt.
 
 * 3.2 % bruker Rust (68 % bruker Javascript)
 * 83.5 % elsker Rust
@@ -73,7 +85,7 @@ TODO Eksempel
 
 ---
 
-## Hvem bruker Rust i dag
+## Hvem bruker Rust i dag?
 
 * Mozilla
 * Microsoft
@@ -136,6 +148,16 @@ Rust må være 10 ganger bedre enn det man bruker fra før for å være fristend
 * [70 percent](https://www.zdnet.com/article/microsoft-70-percent-of-all-security-bugs-are-memory-safety-issues/)
 * [Mozilla 74%](https://hacks.mozilla.org/2019/02/rewriting-a-browser-component-in-rust/)
 * [Stackoverflow survey](https://insights.stackoverflow.com/survey/2019#most-loved-dreaded-and-wanted)
+
+---
+
+## Historie
+
+* 1.0 kom for fire år siden
+* Men språket er ca åtte-ni år nå
+* Kommer ny versjon hver sjette uke
+* Vi er på versjon 1.39 nå
+  * Med `async!`/`.await` stabilisert
 
 ---
 
