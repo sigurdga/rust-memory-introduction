@@ -68,8 +68,7 @@ TODO Eksempel
 
 ![Techempower benchmarks](assets/techempower-benchmarks.png)
 
-[Techempower benchmarks](https://www.techempower.com/benchmarks/)
-
+[Techempower benchmarks](https://www.techempower.com/benchmarks/) +
 [Debian benchmarks game](https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/rust-gpp.html)
 
 ---
