@@ -9,11 +9,11 @@ _paginate: false
 
 # Rust og minnetrygghet
 
-Jeg har brukt begrenset erfaring
+Min vei til Rust
 
+* Advent of code, for å komme i gang
 * Rust + protobuf + influxdb + websocket + react
 * Rust + API + Mongdb + CLI
-* Advent of code, for å komme i gang
 
 ---
 
@@ -34,15 +34,35 @@ Jeg har brukt begrenset erfaring
 
 ---
 
+### Array bounds C
+
+![Array bounds C](assets/array-bounds-c.png)
+
+---
+
+### Array bounds Rust
+
+![Array bounds C](assets/array-bounds-rust.png)
+
+---
+
+### Use after free C
+
+![Use after free C](assets/use-after-free-c.png)
+
+---
+
+### Use after free Rust
+
+![Use after free Rust](assets/use-after-free-rust.png)
+
+---
+
 ## Ingen runtime
 
 * Ingen initialiseringskost, som i f.eks i Python
 * Kan få «Parity» med C/C++
   * Kan kalle Rust fra C og motsatt
-
----
-
-TODO Eksempler
 
 ---
 
@@ -54,7 +74,15 @@ I tillegg til minnetrygghet får du:
 
 ---
 
-TODO Eksempel
+### Shared variable Python
+
+![Shared variable Python](assets/concurrency-python.png)
+
+---
+
+### Shared variable Rust
+
+![Shared variable Rust](assets/concurrency-rust.png)
 
 ---
 
@@ -66,9 +94,14 @@ TODO Eksempel
 
 ## Hva med ytelse?
 
-![Techempower benchmarks](assets/techempower-benchmarks.png)
 
-[Debian benchmarks game](https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/rust-gpp.html)
+* Se [Debian benchmarks game](https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/rust-gpp.html)
+
+---
+
+## Hva med ytelse? (2)
+
+![Techempower benchmarks](assets/techempower-benchmarks.png)
 
 ---
 
@@ -101,11 +134,11 @@ Læringskurva kan gjøre det vanskelig å komme i gang, men siden den er bratt k
 
 ### Facebook (1)
 
-Overraskende hvem som hopper på Rust først
+* Overraskende hvem som hopper på Rust først
   * Python
   * Javascript
 
-Nye brukere
+* Nye brukere
   * 2-3 uker på å «diskturere» med kompilatoren
   * 3-5 uker så klarer man å gjøre ting ganske effektivt
   * 8+ uker for å skrive idiomatisk Rust
@@ -139,20 +172,7 @@ Rust må være 10 ganger bedre enn det man bruker fra før for å være fristend
 
 ---
 
-# Referanser
-
-* [Intel and Rust: the Future of Systems Programming: Josh Triplett](https://www.youtube.com/watch?v=l9hM0h6IQDo&feature=youtu.be)
-* [Bringing Rust home to meet the parents, Jeremmy Fitzhange](https://www.youtube.com/watch?v=kylqq8pEgRs)
-* [70 percent](https://www.zdnet.com/article/microsoft-70-percent-of-all-security-bugs-are-memory-safety-issues/)
-* [Mozilla 74%](https://hacks.mozilla.org/2019/02/rewriting-a-browser-component-in-rust/)
-* [Stackoverflow survey](https://insights.stackoverflow.com/survey/2019#most-loved-dreaded-and-wanted)
-* [Techempower benchmarks](https://www.techempower.com/benchmarks/)
-
-[Kjørende presentasjon](https://rust-memory-intro.now.sh) + [Kildekode](https://github.com/sigurdga/rust-memory-introduction)
-
----
-
-## Historie
+# Historie
 
 * 1.0 kom for fire år siden
 * Men språket er ca åtte-ni år nå
@@ -162,7 +182,26 @@ Rust må være 10 ganger bedre enn det man bruker fra før for å være fristend
 
 ---
 
-## Binærstørrelse
+# Referanser
+
+* [Intel and Rust: the Future of Systems Programming: Josh Triplett](https://www.youtube.com/watch?v=l9hM0h6IQDo&feature=youtu.be)
+* [Bringing Rust home to meet the parents, Jeremmy Fitzhange](https://www.youtube.com/watch?v=kylqq8pEgRs)
+* [70 percent](https://www.zdnet.com/article/microsoft-70-percent-of-all-security-bugs-are-memory-safety-issues/)
+* [Mozilla 74%](https://hacks.mozilla.org/2019/02/rewriting-a-browser-component-in-rust/)
+* [Stackoverflow survey](https://insights.stackoverflow.com/survey/2019#most-loved-dreaded-and-wanted)
+* [Techempower benchmarks](https://www.techempower.com/benchmarks/)
+* [Oconnor663: Rust examples](https://github.com/oconnor663/rust-examples)
+
+---
+
+# Takk
+
+* Presentasjon: <https://rust-memory-intro.now.sh>
+* Kildekode: <https://github.com/sigurdga/rust-memory-introduction>
+
+---
+
+# Binærstørrelse
 
 * Ofte et negativt punkt at f.eks «Hello World» blir flere megabyte.
 * Kan få det ned i 504 bytes, med en masse triks.
