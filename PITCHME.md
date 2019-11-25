@@ -64,7 +64,7 @@ TODO Eksempel
 
 ---
 
-## Hva med performance?
+## Hva med ytelse?
 
 ![Techempower benchmarks](assets/techempower-benchmarks.png)
 
@@ -147,6 +147,8 @@ Rust må være 10 ganger bedre enn det man bruker fra før for å være fristend
 * [70 percent](https://www.zdnet.com/article/microsoft-70-percent-of-all-security-bugs-are-memory-safety-issues/)
 * [Mozilla 74%](https://hacks.mozilla.org/2019/02/rewriting-a-browser-component-in-rust/)
 * [Stackoverflow survey](https://insights.stackoverflow.com/survey/2019#most-loved-dreaded-and-wanted)
+
+[Kjørende presentasjon](https://rust-memory-intro.now.sh) + [Kildekode](https://github.com/sigurdga/rust-memory-introduction)
 
 ---
 
