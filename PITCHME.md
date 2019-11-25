@@ -1,35 +1,30 @@
 ---
 marp: true
-title: Marp CLI example
-description: Hosting Marp slide deck on the web
+title: Rust memory introduction
+description: Rust introduction with memory examples
 theme: uncover
 paginate: true
 _paginate: false
 ---
 
-# <!--fit--> Rust og minnesikkerhet
+# Rust og minnetrygghet
 
 ---
 
-![bg](#123)
-![](#fff)
-
-##### <!--fit--> [Marp CLI](https://github.com/marp-team/marp-cli) + [GitHub Pages](https://github.com/pages) | [Netlify](https://www.netlify.com/) | [ZEIT Now](https://zeit.co/now)
-
-##### <!--fit--> 👉 The easiest way to host<br />your Marp deck on the web
-
----
-
-# Safety and performance
+## Safety and performance
 
 * Automatisk minnehåndtering
 * Ingen GC
 * Ved hjelp av: Ownership, borrowing, references, lifetimes
   * I C-språk gjør du dette selv
+* Løser nye klasser med seriøse problemer
+* Tryggere å refaktorere kode
+* Tar code-review til et høyre nivå
+  * Slipper å gå i detaljer
 
 ---
 
-# Ingen runtime
+## Ingen runtime
 
 * Ingen initialiseringskost, som i f.eks i Python
 * Kan få «Parity» med C/C++
@@ -37,15 +32,29 @@ _paginate: false
 
 ---
 
-# Safe concurrent programming
-
-Alt du må gjennom for å bruke minne riktig, gjør også at
-du og Rust holder orden på hvilken tråd som eier hvilket
-objekt
+TODO Eksempler
 
 ---
 
-# Historie
+## Safe concurrent programming
+
+I tillegg til minnetrygghet får du:
+
+* Hvilken tråd holder orden på hvilket objekt
+
+---
+
+TODO Eksempel
+
+---
+
+## Cross platform
+
+* Cross platform CLI
+
+---
+
+## Historie
 
 * 1.0 kom for fire år siden
 * Men språket er ca åtte-ni år nå
@@ -55,7 +64,16 @@ objekt
 
 ---
 
-# Hvem bruker Rust i dag
+## «Most loved» (Stack overflow)
+
+* 3.2 % bruker Rust (68 % bruker Javascript)
+* 83.5 % elsker Rust
+  * % of developers who are developing with the language or technology and have expressed interest in continuing to develop with it
+* Høyest for fjerde år på rad
+
+---
+
+## Hvem bruker Rust i dag
 
 * Mozilla
 * Microsoft
@@ -71,16 +89,43 @@ objekt
 
 ---
 
-# «Most loved» (Stack overflow)
+### Facebook (1)
 
-TODO
+Overraskende hvem som hopper på Rust først
+  * Python
+  * Javascript
+
+Nye brukere
+  * 2-3 uker på å «diskturere» med kompilatoren
+  * 3-5 uker så klarer man å gjøre ting ganske effektivt
+  * 8+ uker for å skrive idiomatisk Rust
 
 ---
 
-# Binærstørrelse
+### Facebook (2)
 
-* Ofte et negativt punkt at f.eks «Hello World» blir flere megabyte.
-* Kan få det ned i 504 bytes, med en masse triks.
+Rust må være 10 ganger bedre enn det man bruker fra før for å være fristende nok til at folk vil bytte
+
+* Alle som har evaluert Rust, har endt med å ta det i bruk
+* Ingen angrer
+* Bruker ingen tid på å debugge minnekorrupsjon eller race-conditions
+
+---
+
+### Mozilla
+
+* Skreiv om CSS-komponenten av Firefox til Rust pga performance
+* I tillegg fikk de tryggere kode
+	* 74 % førre sikkerhetsbugs om de hadde hatt Rust-implementasjonen fra start
+	* Men det finnes andre sikkerhetsbugs, og andre alvorlige bugs
+
+---
+
+### Microsoft
+
+* Har gått gjennom kildekode fra siste 12 år
+* 70 % av sikkerhetsbugs er minnerelatert
+* Skriver om deler av Windows, bit for bit i Rust
 
 ---
 
@@ -90,3 +135,12 @@ TODO
 * [Bringing Rust home to meet the parents, Jeremmy Fitzhange](https://www.youtube.com/watch?v=kylqq8pEgRs)
 * [70 percent](https://www.zdnet.com/article/microsoft-70-percent-of-all-security-bugs-are-memory-safety-issues/)
 * [Mozilla 74%](https://hacks.mozilla.org/2019/02/rewriting-a-browser-component-in-rust/)
+* [Stackoverflow survey](https://insights.stackoverflow.com/survey/2019#most-loved-dreaded-and-wanted)
+
+---
+
+## Binærstørrelse
+
+* Ofte et negativt punkt at f.eks «Hello World» blir flere megabyte.
+* Kan få det ned i 504 bytes, med en masse triks.
+
