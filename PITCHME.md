@@ -11,9 +11,9 @@ _paginate: false
 
 Jeg har brukt begrenset erfaring
 
-  * Rust + protobuf + influxdb + websocket + react
-  * Rust + API + Mongdb + CLI 
-  * Advent of code, for å komme i gang
+* Rust + protobuf + influxdb + websocket + react
+* Rust + API + Mongdb + CLI
+* Advent of code, for å komme i gang
 
 ---
 
@@ -67,10 +67,6 @@ TODO Eksempel
 ## Hva med ytelse?
 
 ![Techempower benchmarks](assets/techempower-benchmarks.png)
-
-<text style="font-size: 50%">
-[Techempower benchmarks](https://www.techempower.com/benchmarks/)
-</text>
 
 [Debian benchmarks game](https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/rust-gpp.html)
 
@@ -150,6 +146,7 @@ Rust må være 10 ganger bedre enn det man bruker fra før for å være fristend
 * [70 percent](https://www.zdnet.com/article/microsoft-70-percent-of-all-security-bugs-are-memory-safety-issues/)
 * [Mozilla 74%](https://hacks.mozilla.org/2019/02/rewriting-a-browser-component-in-rust/)
 * [Stackoverflow survey](https://insights.stackoverflow.com/survey/2019#most-loved-dreaded-and-wanted)
+* [Techempower benchmarks](https://www.techempower.com/benchmarks/)
 
 [Kjørende presentasjon](https://rust-memory-intro.now.sh) + [Kildekode](https://github.com/sigurdga/rust-memory-introduction)
 
