@@ -7,19 +7,7 @@ paginate: true
 _paginate: false
 ---
 
-![bg](./assets/gradient.jpg)
-
-# <!--fit--> TEST Marp CLI example
-
-Test Hosting Marp slide deck on the web
-
-https://github.com/yhatt/marp-cli-example
-
-<style scoped>a { color: #eee; }</style>
-
----
-
-![Marp bg 60%](https://raw.githubusercontent.com/marp-team/marp/master/marp.png)
+# <!--fit--> Rust og minnesikkerhet
 
 ---
 
@@ -32,44 +20,73 @@ https://github.com/yhatt/marp-cli-example
 
 ---
 
-![bg right 70%](https://icongr.am/octicons/mark-github.svg)
+# Safety and performance
 
-## **[GitHub Pages](https://github.com/pages)**
-
-#### Ready to write & host your deck!
-
-[![Fork on GitHub h:1.5em](https://img.shields.io/github/forks/yhatt/marp-cli-example?label=Fork&style=social)](https://github.com/yhatt/marp-cli-example)
-
-<!-- _footer: ":information_source: Require to pass ACCESS_TOKEN as secret." -->
+* Automatisk minnehåndtering
+* Ingen GC
+* Ved hjelp av: Ownership, borrowing, references, lifetimes
+  * I C-språk gjør du dette selv
 
 ---
 
-![bg right 70%](https://www.netlify.com/img/press/logos/logomark.svg)
+# Ingen runtime
 
-## **[Netlify](https://www.netlify.com/)**
-
-#### Ready to write & host your deck!
-
-[![Deploy to Netlify h:1.5em](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/yhatt/marp-cli-example)
+* Ingen initialiseringskost, som i f.eks i Python
+* Kan få «Parity» med C/C++
+  * Kan kalle Rust fra C og motsatt
 
 ---
 
-![bg right 70%](https://assets.zeit.co/image/upload/front/assets/design/now-black.svg)
+# Safe concurrent programming
 
-## **[ZEIT Now](https://zeit.co/now)**
-
-#### Ready to write & host your deck!
-
-[![Deploy with ZEIT Now h:1.5em](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/yhatt/marp-cli-example)
+Alt du må gjennom for å bruke minne riktig, gjør også at
+du og Rust holder orden på hvilken tråd som eier hvilket
+objekt
 
 ---
 
-### <!--fit--> :ok_hand:
+# Historie
+
+* 1.0 kom for fire år siden
+* Men språket er ca åtte-ni år nå
+* Kommer ny versjon hver sjette uke
+* Vi er på versjon 1.39 nå
+  * Med `async!`/`.await` stabilisert
 
 ---
 
-![bg 40% opacity blur](https://avatars1.githubusercontent.com/u/3993388?v=4)
+# Hvem bruker Rust i dag
 
-### Created by Yuki Hattori ([@yhatt](https://github.com/yhatt))
+* Mozilla
+* Microsoft
+* Facebook
+* Google
+* Intel
+* Amazon
+* Dropbox
+* Chef
+* Fastly
+* Baidu
+* ...
 
-https://github.com/yhatt/marp-cli-example
+---
+
+# «Most loved» (Stack overflow)
+
+TODO
+
+---
+
+# Binærstørrelse
+
+* Ofte et negativt punkt at f.eks «Hello World» blir flere megabyte.
+* Kan få det ned i 504 bytes, med en masse triks.
+
+---
+
+# Referanser
+
+* [Intel and Rust: the Future of Systems Programming: Josh Triplett](https://www.youtube.com/watch?v=l9hM0h6IQDo&feature=youtu.be)
+* [Bringing Rust home to meet the parents, Jeremmy Fitzhange](https://www.youtube.com/watch?v=kylqq8pEgRs)
+* [70 percent](https://www.zdnet.com/article/microsoft-70-percent-of-all-security-bugs-are-memory-safety-issues/)
+* [Mozilla 74%](https://hacks.mozilla.org/2019/02/rewriting-a-browser-component-in-rust/)
